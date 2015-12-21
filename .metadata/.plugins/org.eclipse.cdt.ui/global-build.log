@@ -1,0 +1,36 @@
+09:51:16 **** Build of configuration Release for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+09:51:17 **** Incremental Build of configuration Release for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+09:51:20 **** Clean-only build of configuration Debug for project LLVM ****
+make clean 
+rm -rf  ./src/CPS2000-LLVM_Project.o ./src/Lexer.o  ./src/CPS2000-LLVM_Project.d ./src/Lexer.d  LLVM
+ 
+09:51:20 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/CPS2000-LLVM_Project.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPS2000-LLVM_Project.d" -MT"src/CPS2000-LLVM_Project.o" -o "src/CPS2000-LLVM_Project.o" "../src/CPS2000-LLVM_Project.cpp"
+Finished building: ../src/CPS2000-LLVM_Project.cpp
+ 
+Building file: ../src/Lexer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lexer.d" -MT"src/Lexer.o" -o "src/Lexer.o" "../src/Lexer.cpp"
+Finished building: ../src/Lexer.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/CPS2000-LLVM_Project.o ./src/Lexer.o   
+Finished building target: LLVM
+ 
+10:20:49 **** Incremental Build of configuration Release for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+10:47:03 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+10:47:08 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.

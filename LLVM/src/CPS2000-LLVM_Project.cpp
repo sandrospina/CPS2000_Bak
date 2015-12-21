@@ -13,6 +13,13 @@ using namespace std;
 int main() {
 	Lexer * lex = new Lexer("./Resource/test.prog");
 	cout << lex->ToString() << endl;
+	Lexer::Token nxtToken = lex->GetToken();
+	while (nxtToken.token_type != Lexer::TOK_EOF)
+	{
+		cout << nxtToken.ToString() << " ";
+		nxtToken = lex->GetToken();
+	}
+	cout << nxtToken.ToString() << endl;
 
 	return 0;
 }

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LLVM/RemoteSystemsTempFiles&apos;" deleteContents="false" description="Delete resource &apos;LLVM/RemoteSystemsTempFiles&apos;" element1="/LLVM/RemoteSystemsTempFiles" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1450438614522"/>
+</session>

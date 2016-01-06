@@ -1,0 +1,18 @@
+/*
+ * ASTCallExprNode.cpp
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#include "ASTCallExprNode.h"
+
+ASTCallExprNode::ASTCallExprNode() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ASTCallExprNode::~ASTCallExprNode() {
+	// TODO Auto-generated destructor stub
+}
+

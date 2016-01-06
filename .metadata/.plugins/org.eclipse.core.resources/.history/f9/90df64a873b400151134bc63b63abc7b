@@ -1,0 +1,63 @@
+/*
+ * Parser.cpp
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#include "Parser.h"
+
+Parser::Parser(Lexer p_Lexer) : Lex(p_Lexer) {
+	// TODO Auto-generated constructor stub
+
+}
+
+Parser::~Parser() {
+	// TODO Auto-generated destructor stub
+}
+
+std::unique_ptr<ASTExprNode> Parser::Error(const char *Str)
+{
+	std::cout << "Error: " << Str << std::endl;
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseNumberExpr()
+{
+	auto node = make_unique<ASTNumberExprNode>(CurrentToken.number_value);
+	CurrentToken = Lex.GetToken();
+	return std::move(node);
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseParenthesisExpr()
+{
+	CurrentToken = Lex.GetToken();
+	auto node = ParseExpression();
+	if (!node) return nullptr;
+	if (CurrentToken.token_type != Lexer::TOK_PUNC)
+	{
+		return Error("Encountered " + CurrentToken.ToString() + " instead of TOK_PUNC [)]");
+	}
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseIdentifierExpr()
+{
+
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseUnaryExpr()
+{
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseBinaryExpr()
+{
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseExpression()
+{
+	return nullptr;
+}

@@ -1,0 +1,17 @@
+/*
+ * ASTFunctionNode.h
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTFUNCTIONNODE_H_
+#define ASTFUNCTIONNODE_H_
+
+class ASTFunctionNode {
+public:
+	ASTFunctionNode();
+	virtual ~ASTFunctionNode();
+};
+
+#endif /* ASTFUNCTIONNODE_H_ */

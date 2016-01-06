@@ -1,0 +1,19 @@
+/*
+ * ASTBinaryExprNode.h
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTBINARYEXPRNODE_H_
+#define ASTBINARYEXPRNODE_H_
+
+#include "ASTExprNode.h"
+
+class ASTBinaryExprNode: public ASTExprNode {
+public:
+	ASTBinaryExprNode();
+	virtual ~ASTBinaryExprNode();
+};
+
+#endif /* ASTBINARYEXPRNODE_H_ */

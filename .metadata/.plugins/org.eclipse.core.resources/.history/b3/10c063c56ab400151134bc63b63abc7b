@@ -1,0 +1,29 @@
+/*
+ * Parser.h
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#ifndef PARSER_H_
+#define PARSER_H_
+
+#include <memory>
+#include <vector>
+
+#include "Lexer.h"
+#include "ASTExprNode.h"
+#include "ASTNumberExprNode.h"
+
+class Parser {
+public:
+	Parser(Lexer p_Lexer);
+	virtual ~Parser();
+
+private:
+	Lexer Lex;
+
+	std::unique_ptr<ASTExprNode> ParseNumberExpr();
+};
+
+#endif /* PARSER_H_ */

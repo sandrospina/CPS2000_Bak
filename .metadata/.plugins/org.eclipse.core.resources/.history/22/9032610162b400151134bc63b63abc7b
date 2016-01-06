@@ -1,0 +1,18 @@
+/*
+ * ASTFuncPrototypeNode.cpp
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#include "ASTFuncPrototypeNode.h"
+
+ASTFuncPrototypeNode::ASTFuncPrototypeNode() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ASTFuncPrototypeNode::~ASTFuncPrototypeNode() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,19 @@
+/*
+ * ASTCallExprNode.h
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTCALLEXPRNODE_H_
+#define ASTCALLEXPRNODE_H_
+
+#include "ASTExprNode.h"
+
+class ASTCallExprNode: public ASTExprNode {
+public:
+	ASTCallExprNode();
+	virtual ~ASTCallExprNode();
+};
+
+#endif /* ASTCALLEXPRNODE_H_ */

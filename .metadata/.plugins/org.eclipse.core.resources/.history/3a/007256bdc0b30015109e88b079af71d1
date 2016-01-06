@@ -1,0 +1,17 @@
+/*
+ * ASTExprNode.h
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTEXPRNODE_H_
+#define ASTEXPRNODE_H_
+
+class ASTExprNode : public ASTNode {
+public:
+	ASTExprNode();
+	virtual ~ASTExprNode();
+};
+
+#endif /* ASTEXPRNODE_H_ */

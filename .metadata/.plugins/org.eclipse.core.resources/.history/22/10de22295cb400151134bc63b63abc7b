@@ -1,0 +1,19 @@
+/*
+ * ASTFuncPrototypeNode.h
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTFUNCPROTOTYPENODE_H_
+#define ASTFUNCPROTOTYPENODE_H_
+
+
+
+class ASTFuncPrototypeNode {
+public:
+	ASTFuncPrototypeNode();
+	virtual ~ASTFuncPrototypeNode();
+};
+
+#endif /* ASTFUNCPROTOTYPENODE_H_ */

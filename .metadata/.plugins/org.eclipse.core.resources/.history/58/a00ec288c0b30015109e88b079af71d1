@@ -1,0 +1,18 @@
+/*
+ * ASTBinaryExprNode.cpp
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#include "ASTBinaryExprNode.h"
+
+ASTBinaryExprNode::ASTBinaryExprNode() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ASTBinaryExprNode::~ASTBinaryExprNode() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,18 @@
+/*
+ * ASTNumberExprNode.cpp
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#include "ASTNumberExprNode.h"
+
+ASTNumberExprNode::ASTNumberExprNode() {
+	// TODO Auto-generated constructor stub
+
+}
+
+ASTNumberExprNode::~ASTNumberExprNode() {
+	// TODO Auto-generated destructor stub
+}
+

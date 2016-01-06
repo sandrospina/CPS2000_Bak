@@ -1,0 +1,24 @@
+/*
+ * Parser.cpp
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#include "Parser.h"
+
+Parser::Parser(Lexer p_Lexer) : Lex(p_Lexer) {
+	// TODO Auto-generated constructor stub
+
+}
+
+Parser::~Parser() {
+	// TODO Auto-generated destructor stub
+}
+
+std::unique_ptr<ASTExprNode> Parser::ParseNumberExpr()
+{
+	auto Result = llvm::make_unique<ASTNumberExprNode>
+
+}
+

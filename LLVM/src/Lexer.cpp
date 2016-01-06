@@ -84,6 +84,14 @@ Lexer::Token Lexer::GetToken() {
 		return t;
 	}
 
+	if (lastChar == ',')
+	{
+		m_charIndex ++;
+		Lexer::Token t = Lexer::Token(TOK_PUNC);
+		t.id_name = ",";
+		return t;
+	}
+
 	if (lastChar == '(')
 	{
 		m_charIndex ++;
@@ -128,6 +136,7 @@ Lexer::Token Lexer::GetToken() {
 			m_charIndex ++;
 			Lexer::Token t = Lexer::Token(TOK_BOOLOP);
 			t.id_name = "==";
+			t.number_value = 10; // use to store precedence
 			return t;
 		} else {
 			return Lexer::Token(TOK_ASSIGNOP);
@@ -143,12 +152,14 @@ Lexer::Token Lexer::GetToken() {
 			m_charIndex ++;
 			Lexer::Token t = Lexer::Token(TOK_BOOLOP);
 			t.id_name = "<=";
+			t.number_value = 10; // use to store precedence
 			return t;
 		}
 		else
 		{
 			Lexer::Token t = Lexer::Token(TOK_BOOLOP);
 			t.id_name = "<";
+			t.number_value = 10; // use to store precedence
 			return t;
 		}
 	}
@@ -162,12 +173,14 @@ Lexer::Token Lexer::GetToken() {
 			m_charIndex ++;
 			Lexer::Token t = Lexer::Token(TOK_BOOLOP);
 			t.id_name = ">=";
+			t.number_value = 10; // use to store precedence
 			return t;
 		}
 		else
 		{
 			Lexer::Token t = Lexer::Token(TOK_BOOLOP);
 			t.id_name = ">";
+			t.number_value = 10; // use to store precedence
 			return t;
 		}
 	}
@@ -185,6 +198,7 @@ Lexer::Token Lexer::GetToken() {
 			return t;
 		} else {
 			t.id_name = "+";
+			t.number_value = 20; // use to store precedence
 			return t;
 		}
 	}
@@ -201,6 +215,7 @@ Lexer::Token Lexer::GetToken() {
 			return t;
 		} else {
 			t.id_name = "-";
+			t.number_value = 20; // use to store precedence
 			return t;
 		}
 	}
@@ -210,6 +225,7 @@ Lexer::Token Lexer::GetToken() {
 		m_charIndex ++;
 		Lexer::Token t = Lexer::Token(TOK_ARITHMETICOP);
 		t.id_name = "*";
+		t.number_value = 40; // use to store precedence
 		return t;
 	}
 
@@ -218,6 +234,7 @@ Lexer::Token Lexer::GetToken() {
 		m_charIndex ++;
 		Lexer::Token t = Lexer::Token(TOK_ARITHMETICOP);
 		t.id_name = "\\";
+		t.number_value = 40; // use to store precedence
 		return t;
 	}
 
@@ -287,7 +304,6 @@ Lexer::Token Lexer::GetToken() {
 			return Lexer::Token(TOK_NUM_ERROR);
 		}
 	}
-
 
 	return Lexer::Token(TOK_SYNTAX_ERR);
 }

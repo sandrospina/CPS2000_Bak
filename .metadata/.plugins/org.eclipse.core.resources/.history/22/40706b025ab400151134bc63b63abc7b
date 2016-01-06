@@ -1,0 +1,25 @@
+/*
+ * ASTCallExprNode.h
+ *
+ *  Created on: Jan 5, 2016
+ *      Author: sandro
+ */
+
+#ifndef ASTCALLEXPRNODE_H_
+#define ASTCALLEXPRNODE_H_
+
+#include "ASTExprNode.h"
+
+#include <vector>
+
+class ASTCallExprNode: public ASTExprNode {
+public:
+	ASTCallExprNode();
+	virtual ~ASTCallExprNode();
+
+private:
+	std::string FunctionName;
+	std::vector<std::unique_ptr<ASTExprNode>> Args;
+};
+
+#endif /* ASTCALLEXPRNODE_H_ */

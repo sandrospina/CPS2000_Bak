@@ -1,0 +1,23 @@
+/*
+ * Parser.h
+ *
+ *  Created on: Jan 6, 2016
+ *      Author: sandro
+ */
+
+#ifndef PARSER_H_
+#define PARSER_H_
+
+#include "Lexer.h"
+
+class Parser {
+public:
+	Parser();
+	virtual ~Parser();
+
+private:
+	Lexer::Token GetNextToken();
+	Lexer::Token CurTok;
+};
+
+#endif /* PARSER_H_ */

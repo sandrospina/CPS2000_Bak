@@ -16,3 +16,6 @@ ASTExprNode::~ASTExprNode() {
 	// TODO Auto-generated destructor stub
 }
 
+void ASTExprNode::PrintName() {
+	std::cout << "ASTExprNode" << std::endl;
+}

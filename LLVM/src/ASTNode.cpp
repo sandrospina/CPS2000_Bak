@@ -16,3 +16,6 @@ ASTNode::~ASTNode() {
 	// TODO Auto-generated destructor stub
 }
 
+void ASTNode::PrintName() {
+	std::cout << "ASTNode" << std::endl;
+}

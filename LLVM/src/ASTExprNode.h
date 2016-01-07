@@ -14,6 +14,8 @@ class ASTExprNode : public ASTNode {
 public:
 	ASTExprNode();
 	virtual ~ASTExprNode();
+private:
+	virtual void PrintName() override;
 };
 
 #endif /* ASTEXPRNODE_H_ */

@@ -1,4 +1,4 @@
-16:41:22 **** Incremental Build of configuration Release for project LLVM ****
+15:07:41 **** Incremental Build of configuration Release for project LLVM ****
 make all 
 Building file: ../src/Parser.cpp
 Invoking: GCC C++ Compiler
@@ -10,12 +10,6 @@ Invoking: GCC C++ Linker
 g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
 Finished building target: LLVM
  
-16:41:26 **** Incremental Build of configuration Release for project LLVM ****
-make all 
-make: Nothing to be done for `all'.
-16:41:28 **** Incremental Build of configuration Release for project LLVM ****
-make all 
-make: Nothing to be done for `all'.
-16:48:05 **** Incremental Build of configuration Release for project LLVM ****
+15:07:43 **** Incremental Build of configuration Release for project LLVM ****
 make all 
 make: Nothing to be done for `all'.

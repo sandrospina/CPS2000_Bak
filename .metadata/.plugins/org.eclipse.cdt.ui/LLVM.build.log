@@ -1,6 +1,6 @@
-16:48:05 **** Incremental Build of configuration Release for project LLVM ****
+15:07:43 **** Incremental Build of configuration Release for project LLVM ****
 make all 
 make: Nothing to be done for `all'.
 
-16:48:05 Build Finished (took 61ms)
+15:07:43 Build Finished (took 54ms)
 

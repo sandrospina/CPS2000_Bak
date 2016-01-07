@@ -22,6 +22,7 @@ public:
 private:
 	std::string FunctionName;
 	std::vector<std::unique_ptr<ASTExprNode>> Args;
+	virtual void PrintName() override;
 };
 
 #endif /* ASTCALLEXPRNODE_H_ */

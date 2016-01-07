@@ -19,6 +19,8 @@ public:
 private:
 	char Op;
 	std::unique_ptr<ASTExprNode> LHS, RHS;
+
+	virtual void PrintName() override;
 };
 
 #endif /* ASTBINARYEXPRNODE_H_ */

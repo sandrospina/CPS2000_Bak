@@ -8,18 +8,22 @@
 
 #include <iostream>
 #include "Lexer.h"
+#include "Parser.h"
 using namespace std;
 
 int main() {
-	Lexer * lex = new Lexer("./Resource/test.prog");
+	//Lexer * lex = new Lexer("./Resource/test.prog");
+	Lexer * lex = new Lexer("./Resource/simple_expr.prog");
 	cout << lex->ToString() << endl;
-	Lexer::Token nxtToken = lex->GetToken();
-	while (nxtToken.token_type != Lexer::TOK_EOF)
-	{
-		cout << nxtToken.ToString() << " ";
-		nxtToken = lex->GetToken();
-	}
-	cout << nxtToken.ToString() << endl;
+	Parser * parser = new Parser(*lex);
+
+	//Lexer::Token nxtToken = lex->GetToken();
+	//while (nxtToken.token_type != Lexer::TOK_EOF)
+	//{
+	//	cout << nxtToken.ToString() << " ";
+	//	nxtToken = lex->GetToken();
+	//}
+	//cout << nxtToken.ToString() << endl;
 
 	return 0;
 }

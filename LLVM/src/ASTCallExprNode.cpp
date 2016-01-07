@@ -19,3 +19,7 @@ ASTCallExprNode::~ASTCallExprNode() {
 	// TODO Auto-generated destructor stub
 }
 
+void ASTCallExprNode::PrintName() {
+	std::cout << "ASTBinaryExprNode" << std::endl;
+}
+

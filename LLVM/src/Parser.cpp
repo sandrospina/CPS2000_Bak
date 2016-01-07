@@ -9,7 +9,7 @@
 
 Parser::Parser(Lexer p_Lexer) : Lex(p_Lexer) {
 	// TODO Auto-generated constructor stub
-
+	auto ASTTree = Parse();
 }
 
 Parser::~Parser() {
@@ -115,6 +115,7 @@ std::unique_ptr<ASTExprNode> Parser::ParseUnaryExpr()
 		case Lexer::TOK_PUNC:
 			if (CurrentToken.id_name.compare("(") == 0)
 				return ParseParenthesisExpr();
+			break;
 		default: return Error("Oops, got mixed UP!!");
 	}
 	return nullptr;
@@ -122,7 +123,36 @@ std::unique_ptr<ASTExprNode> Parser::ParseUnaryExpr()
 
 std::unique_ptr<ASTExprNode> Parser::ParseBinaryExpr(int p_Precedence, std::unique_ptr<ASTExprNode> p_LHS)
 {
+	while (true)
+	{
+		if (CurrentToken.token_type == Lexer::TOK_ARITHMETICOP)
+		{
+			float op_prec = CurrentToken.number_value;
+			std::string op_sym = CurrentToken.id_name;
 
+			CurrentToken = Lex.GetToken();
+
+			auto RHS = ParseUnaryExpr();
+			if (!RHS)
+				return nullptr;
+
+			float nxt_op_prec = CurrentToken.number_value;
+
+			if (op_prec < nxt_op_prec)
+			{
+				RHS = ParseBinaryExpr(op_prec+1, std::move(RHS));
+				if (!RHS)
+					return nullptr;
+			}
+
+			p_LHS = make_unique<ASTBinaryExprNode>(op_sym[0],std::move(p_LHS), std::move(RHS));
+		}
+		else
+		{
+			//next token is not an arithmetic op, just return this node.
+			return p_LHS;
+		}
+	}
 	return nullptr;
 }
 
@@ -134,3 +164,35 @@ std::unique_ptr<ASTExprNode> Parser::ParseExpression()
 
 	return ParseBinaryExpr(0, std::move(LHS));
 }
+
+std::unique_ptr<ASTExprNode> Parser::ParseFunctionDefinition()
+{
+	CurrentToken = Lex.GetToken();
+	return nullptr;
+}
+
+std::unique_ptr<ASTExprNode> Parser::Parse()
+{
+	std::cout << "[Parser] Start" << std::endl;
+	CurrentToken = Lex.GetToken();
+	while (CurrentToken.token_type != Lexer::TOK_EOF)
+	{
+		std::cout << CurrentToken.ToString() << " ";
+		//CurrentToken = Lex.GetToken();
+		switch(CurrentToken.token_type)
+		{
+		case Lexer::TOK_DEF:
+			ParseFunctionDefinition();
+			break;
+		default:
+			ParseExpression();
+			break;
+		}
+	}
+	std::cout << "\n[Parser] Finish" << std::endl;
+	return nullptr;
+}
+
+
+
+

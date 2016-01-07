@@ -14,9 +14,15 @@ ASTBinaryExprNode::ASTBinaryExprNode(char p_Op, std::unique_ptr<ASTExprNode> p_L
 {
 	// TODO Auto-generated constructor stub
 
+	std::cout << "Created BinExprNode >> " << std::endl;
 }
 
 ASTBinaryExprNode::~ASTBinaryExprNode() {
 	// TODO Auto-generated destructor stub
 }
+
+void ASTBinaryExprNode::PrintName() {
+	std::cout << "ASTBinaryExprNode" << std::endl;
+}
+
 

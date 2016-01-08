@@ -7,18 +7,19 @@
 
 #include "Parser.h"
 
-Parser::Parser(Lexer p_Lexer) : Lex(p_Lexer) {
+Parser::Parser(Lexer p_lexer) : Lex(p_lexer) {
 	// TODO Auto-generated constructor stub
 	auto ASTTree = Parse();
+	ASTTree->PrintInfo();
 }
 
 Parser::~Parser() {
 	// TODO Auto-generated destructor stub
 }
 
-std::unique_ptr<ASTExprNode> Parser::Error(const char *Str)
+std::unique_ptr<ASTExprNode> Parser::Error(const char *p_Str)
 {
-	std::cout << "Error: " << Str << std::endl;
+	std::cout << "Error: " << p_Str << std::endl;
 	return nullptr;
 }
 
@@ -152,6 +153,9 @@ std::unique_ptr<ASTExprNode> Parser::ParseBinaryExpr(int p_Precedence, std::uniq
 			//next token is not an arithmetic op, just return this node.
 			return p_LHS;
 		}
+
+		float op_prec = CurrentToken.number_value;
+		std::string op_sym = CurrentToken.id_name;
 	}
 	return nullptr;
 }
@@ -177,7 +181,7 @@ std::unique_ptr<ASTExprNode> Parser::Parse()
 	CurrentToken = Lex.GetToken();
 	while (CurrentToken.token_type != Lexer::TOK_EOF)
 	{
-		std::cout << CurrentToken.ToString() << " ";
+		//std::cout << CurrentToken.ToString() << " ";
 		//CurrentToken = Lex.GetToken();
 		switch(CurrentToken.token_type)
 		{
@@ -185,7 +189,8 @@ std::unique_ptr<ASTExprNode> Parser::Parse()
 			ParseFunctionDefinition();
 			break;
 		default:
-			ParseExpression();
+			auto p = ParseExpression();
+			p->PrintInfo();
 			break;
 		}
 	}

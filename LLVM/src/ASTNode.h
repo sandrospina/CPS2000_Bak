@@ -17,8 +17,9 @@ public:
 	ASTNode();
 	virtual ~ASTNode();
 
-private:
-	virtual void PrintName();
+	void Initialise();
+
+	virtual void PrintInfo();
 };
 
 #endif /* ASTNODE_H_ */

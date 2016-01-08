@@ -17,6 +17,7 @@ int main() {
 	cout << lex->ToString() << endl;
 	Parser * parser = new Parser(*lex);
 
+
 	//Lexer::Token nxtToken = lex->GetToken();
 	//while (nxtToken.token_type != Lexer::TOK_EOF)
 	//{

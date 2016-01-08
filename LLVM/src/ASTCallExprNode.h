@@ -19,10 +19,9 @@ public:
 	ASTCallExprNode(std::string p_FunctionName, std::vector<std::unique_ptr<ASTExprNode>> p_Args);
 	virtual ~ASTCallExprNode();
 
-private:
 	std::string FunctionName;
 	std::vector<std::unique_ptr<ASTExprNode>> Args;
-	virtual void PrintName() override;
+	virtual void PrintInfo() override;
 };
 
 #endif /* ASTCALLEXPRNODE_H_ */

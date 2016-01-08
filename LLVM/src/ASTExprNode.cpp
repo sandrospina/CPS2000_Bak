@@ -9,13 +9,12 @@
 
 ASTExprNode::ASTExprNode() {
 	// TODO Auto-generated constructor stub
-
 }
 
 ASTExprNode::~ASTExprNode() {
 	// TODO Auto-generated destructor stub
 }
 
-void ASTExprNode::PrintName() {
-	std::cout << "ASTExprNode" << std::endl;
+void ASTExprNode::PrintInfo() {
+	std::cout << "ASTExprNode [ExprBase]" << std::endl;
 }

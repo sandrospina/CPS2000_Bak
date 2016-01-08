@@ -14,3 +14,7 @@ ASTNumberExprNode::ASTNumberExprNode(float p_Value) : Value(p_Value) {
 ASTNumberExprNode::~ASTNumberExprNode() {
 	// TODO Auto-generated destructor stub
 }
+
+void ASTNumberExprNode::PrintInfo() {
+	std::cout << "ASTNumberExprNode [" << std::to_string(Value) << "]" << std::endl;
+}

@@ -1,8 +1,22 @@
-15:07:41 **** Incremental Build of configuration Release for project LLVM ****
+16:47:57 **** Incremental Build of configuration Debug for project LLVM ****
 make all 
+Building file: ../src/CPS2000-LLVM_Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPS2000-LLVM_Project.d" -MT"src/CPS2000-LLVM_Project.o" -o "src/CPS2000-LLVM_Project.o" "../src/CPS2000-LLVM_Project.cpp"
+../src/CPS2000-LLVM_Project.cpp: In function ‘int main()’:
+../src/CPS2000-LLVM_Project.cpp:18:11: warning: unused variable ‘parser’ [-Wunused-variable]
+  Parser * parser = new Parser(*lex);
+           ^
+Finished building: ../src/CPS2000-LLVM_Project.cpp
+ 
+Building file: ../src/Lexer.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lexer.d" -MT"src/Lexer.o" -o "src/Lexer.o" "../src/Lexer.cpp"
+Finished building: ../src/Lexer.cpp
+ 
 Building file: ../src/Parser.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++1y -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
 Finished building: ../src/Parser.cpp
  
 Building target: LLVM
@@ -10,6 +24,213 @@ Invoking: GCC C++ Linker
 g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
 Finished building target: LLVM
  
-15:07:43 **** Incremental Build of configuration Release for project LLVM ****
+16:47:59 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:48:00 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:48:01 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:48:11 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/CPS2000-LLVM_Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPS2000-LLVM_Project.d" -MT"src/CPS2000-LLVM_Project.o" -o "src/CPS2000-LLVM_Project.o" "../src/CPS2000-LLVM_Project.cpp"
+../src/CPS2000-LLVM_Project.cpp: In function ‘int main()’:
+../src/CPS2000-LLVM_Project.cpp:18:11: warning: unused variable ‘parser’ [-Wunused-variable]
+  Parser * parser = new Parser(*lex);
+           ^
+Finished building: ../src/CPS2000-LLVM_Project.cpp
+ 
+Building file: ../src/Lexer.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lexer.d" -MT"src/Lexer.o" -o "src/Lexer.o" "../src/Lexer.cpp"
+Finished building: ../src/Lexer.cpp
+ 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+16:48:13 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:49:44 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:51:39 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:52:23 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:52:44 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:53:31 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/ASTNumberExprNode.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ASTNumberExprNode.d" -MT"src/ASTNumberExprNode.o" -o "src/ASTNumberExprNode.o" "../src/ASTNumberExprNode.cpp"
+Finished building: ../src/ASTNumberExprNode.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+16:55:10 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:57:16 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/ASTExprNode.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ASTExprNode.d" -MT"src/ASTExprNode.o" -o "src/ASTExprNode.o" "../src/ASTExprNode.cpp"
+Finished building: ../src/ASTExprNode.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+16:57:17 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:57:51 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/ASTNumberExprNode.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ASTNumberExprNode.d" -MT"src/ASTNumberExprNode.o" -o "src/ASTNumberExprNode.o" "../src/ASTNumberExprNode.cpp"
+Finished building: ../src/ASTNumberExprNode.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+16:57:53 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:58:08 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+16:58:10 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+16:58:12 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:05:12 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:08:13 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+17:13:30 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/CPS2000-LLVM_Project.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPS2000-LLVM_Project.d" -MT"src/CPS2000-LLVM_Project.o" -o "src/CPS2000-LLVM_Project.o" "../src/CPS2000-LLVM_Project.cpp"
+../src/CPS2000-LLVM_Project.cpp: In function ‘int main()’:
+../src/CPS2000-LLVM_Project.cpp:18:11: warning: unused variable ‘parser’ [-Wunused-variable]
+  Parser * parser = new Parser(*lex);
+           ^
+Finished building: ../src/CPS2000-LLVM_Project.cpp
+ 
+Building file: ../src/Lexer.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Lexer.d" -MT"src/Lexer.o" -o "src/Lexer.o" "../src/Lexer.cpp"
+Finished building: ../src/Lexer.cpp
+ 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+17:15:07 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:28:21 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:31:44 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+../src/Parser.cpp: In member function ‘std::unique_ptr<ASTExprNode> Parser::ParseBinaryExpr(int, std::unique_ptr<ASTExprNode>)’:
+../src/Parser.cpp:157:9: warning: unused variable ‘op_prec’ [-Wunused-variable]
+   float op_prec = CurrentToken.number_value;
+         ^
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+17:31:46 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:31:47 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:31:48 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:36:23 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+Building file: ../src/Parser.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parser.d" -MT"src/Parser.o" -o "src/Parser.o" "../src/Parser.cpp"
+../src/Parser.cpp: In member function ‘std::unique_ptr<ASTExprNode> Parser::ParseBinaryExpr(int, std::unique_ptr<ASTExprNode>)’:
+../src/Parser.cpp:157:9: warning: unused variable ‘op_prec’ [-Wunused-variable]
+   float op_prec = CurrentToken.number_value;
+         ^
+Finished building: ../src/Parser.cpp
+ 
+Building target: LLVM
+Invoking: GCC C++ Linker
+g++  -o "LLVM"  ./src/ASTBinaryExprNode.o ./src/ASTCallExprNode.o ./src/ASTExprNode.o ./src/ASTFuncPrototypeNode.o ./src/ASTFunctionNode.o ./src/ASTNode.o ./src/ASTNumberExprNode.o ./src/ASTVariableExprNode.o ./src/CPS2000-LLVM_Project.o ./src/Lexer.o ./src/Parser.o   
+Finished building target: LLVM
+ 
+17:36:26 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:36:30 **** Incremental Build of configuration Debug for project LLVM ****
+make all 
+make: Nothing to be done for `all'.
+17:36:33 **** Incremental Build of configuration Debug for project LLVM ****
 make all 
 make: Nothing to be done for `all'.

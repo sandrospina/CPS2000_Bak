@@ -12,14 +12,15 @@
 #include "ASTFuncPrototypeNode.h"
 #include "ASTExprNode.h"
 
-class ASTFunctionNode {
+class ASTFunctionNode : ASTNode{
 public:
 	ASTFunctionNode(std::unique_ptr<ASTFuncPrototypeNode> p_Prototype, std::unique_ptr<ASTExprNode> p_Body);
 	virtual ~ASTFunctionNode();
 
-private:
 	std::unique_ptr<ASTFuncPrototypeNode> Prototype;
 	std::unique_ptr<ASTExprNode> Body;
+
+	virtual void PrintInfo() override;
 };
 
 #endif /* ASTFUNCTIONNODE_H_ */

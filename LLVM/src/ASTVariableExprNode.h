@@ -16,8 +16,9 @@ public:
 	ASTVariableExprNode(const std::string &Name);
 	virtual ~ASTVariableExprNode();
 
-private:
+
 	std::string Name;
+	virtual void PrintInfo() override;
 };
 
 #endif /* ASTVARIABLEEXPRNODE_H_ */

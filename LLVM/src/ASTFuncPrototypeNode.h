@@ -11,14 +11,16 @@
 #include <string>
 #include <vector>
 
-class ASTFuncPrototypeNode {
+#include "ASTNode.h"
+
+class ASTFuncPrototypeNode : public ASTNode {
 public:
 	ASTFuncPrototypeNode(const std::string &p_Name, std::vector<std::string> p_Args);
 	virtual ~ASTFuncPrototypeNode();
 
-private:
 	std::string Name;
 	std::vector<std::string> Args;
+	virtual void PrintInfo() override;
 };
 
 #endif /* ASTFUNCPROTOTYPENODE_H_ */

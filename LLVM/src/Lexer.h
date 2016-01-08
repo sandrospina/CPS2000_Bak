@@ -74,7 +74,7 @@ public:
 				case TOK_DEF : return "[TOK_DEF]";
 				case TOK_EXTERN : return "[TOK_EXTERN]";
 				case TOK_ID : return "[TOK_ID " + id_name + "]";
-				case TOK_NUMBER : return "[TOK_NUMBER ]"; // + std::to_string(number_value) + "]";
+				case TOK_NUMBER : return "[TOK_NUMBER " + std::to_string(number_value) + "]";
 				case TOK_NUM_ERROR : return "[TOK_NUM_ERROR]";
 				case TOK_IF : return "[TOK_IF]";
 				case TOK_PUNC : return "[TOK_PUNC " + id_name+ "]";
